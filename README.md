@@ -28,7 +28,9 @@ You can always call the below command to get a descriptive usage hints.
 
 
 ### Support
-This application supports cloudformation template extraction only for the following aws services: _(more coming soon)_
+Supported cloudformation templates:
 * DynamoDB Tables
 * SQS Queues
 * SNS Notifications
+
+_(more coming soon)_
