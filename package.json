@@ -1,0 +1,50 @@
+{
+  "name": "testify",
+  "version": "1.0.0",
+  "description": "A cli tool to read aws cloudformation template yml stack files from a specific directory and converts it into `aws-sdk` compatible definitions to simplify replication.",
+  "main": ".build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix",
+    "test": "npm run lint"
+  },
+  "homepage": "https://github.com/masrimohammad/testify#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/masrimohammad/testify"
+  },
+  "bin": {
+    "testify": ".build/bin/index.js"
+  },
+  "author": "Mohamad Masri",
+  "license": "ISC",
+  "dependencies": {
+    "constructs": "^10.0.0",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^18.11.18",
+    "@types/yargs": "^17.0.20",
+    "aws-cdk-lib": "2.8.0",
+    "aws-cdk": "^2.61.1",
+    "aws-sdk": "^2.1296.0",
+    "fs": "0.0.1-security",
+    "jest": "^26.1.0",
+    "js-yaml": "^3.13.1",
+    "path": "^0.12.7",
+    "ts-jest": "^26.1.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.9.4",
+    "yaml-cfn": "^0.2.3",
+    "yargs": "^17.6.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^5.10.2",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.32.1"
+  }
+}
