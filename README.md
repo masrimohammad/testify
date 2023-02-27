@@ -1,4 +1,4 @@
-# AWS Cloudformation Template Stacks Parser (YML/CDK)
+# AWS Cloudformation Template Stacks Testifier (YML/CDK)
 
 A cli tool to read aws cloudformation template yml stack files from a specific directory and converts it into `aws-sdk` compatible definitions to simplify replication.
 
