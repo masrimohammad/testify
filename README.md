@@ -40,3 +40,5 @@ Supported cloudformation templates:
 * SNS Notifications
 
 _(more coming soon)_
+
+Inspired by https://github.com/wassilygraf/testify-dynamodb
