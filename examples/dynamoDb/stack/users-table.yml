@@ -1,0 +1,21 @@
+---
+AWSTemplateFormatVersion: 2010-09-09
+Description: Users table
+
+Resources:
+  UsersTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: userId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: userId
+          KeyType: HASH
+
+Outputs:
+  UsersTable:
+    Value: !Ref UsersTable
+  UsersTableArn:
+    Value: !GetAtt UsersTable.Arn

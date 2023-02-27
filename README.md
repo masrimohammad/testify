@@ -26,6 +26,12 @@ Below is an example about how to use the parser cli command.
 You can always call the below command to get a descriptive usage hints.
 `testify --help`
 
+### Examples
+Under `examples` directory we managed to add an integration test interacting with a dynamoDb table, in order to run
+it first please make sure that you have docker installed (up and running on your machine)
+
+Once everything is set, navigate to dynamoDb directory under examples and trigger
+`docker-composer up --build`
 
 ### Support
 Supported cloudformation templates:

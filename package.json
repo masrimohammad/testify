@@ -7,7 +7,8 @@
     "build": "tsc",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "test:int": "ts-node ./node_modules/jest/bin/jest.js --config=jest.config.js"
   },
   "homepage": "https://github.com/masrimohammad/testify#readme",
   "repository": {

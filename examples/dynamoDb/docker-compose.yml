@@ -1,0 +1,24 @@
+version: '3'
+services:
+  dynamodb:
+    image: amazon/dynamodb-local
+    ports:
+      - "8000:8000"
+
+  test:
+    build:
+      dockerfile: examples/dynamoDb/Dockerfile
+      context: ./../../
+    depends_on:
+      - dynamodb
+    environment:
+      - AWS_REGION=someRegion
+      - AWS_DYNAMODB_ENDPOINT_URL=http://dynamodb:8000
+      - AWS_ACCESS_KEY_ID=someAccessKeyId
+      - AWS_SECRET_ACCESS_KEY=someSecretAccessKey
+    command: >
+      sh -c "testify --type=yml --directory=./examples/dynamoDb/stack &&
+      npm run test:int"
+    volumes:
+      - ./../../:/app
+

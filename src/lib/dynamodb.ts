@@ -8,7 +8,7 @@ const {
   AWS_DYNAMODB_ENDPOINT_URL,
 } = process.env;
 
-const dynamodb = new AWS.DynamoDB({
+export const dynamodb = new AWS.DynamoDB({
   region: AWS_REGION || 'someRegion',
   endpoint: AWS_DYNAMODB_ENDPOINT_URL || 'http://localhost:8000',
   accessKeyId: AWS_ACCESS_KEY_ID || 'someAccessKeyId',
