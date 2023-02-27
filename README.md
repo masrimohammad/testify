@@ -14,7 +14,7 @@ Make sure to set all required env params properly to ensure the success of repli
 * AWS_ACCESS_KEY_ID
 * AWS_SECRET_ACCESS_KEY
 * AWS_DYNAMODB_ENDPOINT_URL
-* 
+
 ### Usage
 Below is an example about how to use the parser cli command.
 
