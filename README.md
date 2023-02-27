@@ -22,7 +22,7 @@ Below is an example about how to use the parser cli command.
 * **type:** cdk / yml
 * **directory:** directory path containing the stack files (for cdk type, use the cdk build output directory)
 * **filter:** any keyword you wish to filter directory files (**endsWith**) 
-* 
+
 You can always call the below command to get a descriptive usage hints.
 `testify --help`
 
